@@ -3,8 +3,10 @@
 
 <head>
     <title>Angular JS</title>
-    <meta charset="utf-8"></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <meta charset="utf-8">
+    </meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
     <script src="js/angular.min.js"></script>
 </head>
 
@@ -16,14 +18,16 @@
         <p>Name : <input type="text" ng-model="name"></p>
         <h1>Hello {{name}}</h1>
         <select ng-model="color">
-<option>Blue</option>
-<option>Red</option>
-<option>Black</option>
-<option>Orange</option>
-<option>Yellow</option>
+            <option>Blue</option>
+            <option>Red</option>
+            <option>Black</option>
+            <option>Orange</option>
+            <option>Yellow</option>
         </select>
         </br>
-        {{ "Color is :" + color }}
+        <!-- {{ "Color is :" + color }} -->
+        <p>Background will change to : <input type="text" style="background-color: {{color}}"></p>
+        <p>Hello all</p>
     </div>
 </body>
 
