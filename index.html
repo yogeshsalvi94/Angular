@@ -15,9 +15,9 @@
     <h1>Hello Everyone</h1>
     <p>Welcome to Angular Tutorial</p>
     <h3>What is Angular?</h3>
-    <div ng-app="myApp" ng-init="number=50;name='Yogesh Salvi';color=['Yellow','Green','Red','Orange']">
-        <p>Name: {{name}}, Number: {{number}}</p>
-        <li ng-repeat="x in color">{{x}}</li>
+    <div ng-app="myApp" ng-controller="firstController" ng-init="number=50;name='Yogesh Salvi';color=['Yellow','Green','Red','Orange']">
+        <!-- <p>Name: {{name}}, Number: {{number}}</p>
+        <li ng-repeat="x in color">{{x}}</li> -->
         <!-- <p>Name : <input type="text" ng-model="name"></p>
         <h1>Hello {{name}}</h1>
         <select ng-model="color">
