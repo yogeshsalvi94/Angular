@@ -1,5 +1,7 @@
 var myApp = angular.module("myApp", []);
-// var a = amgular.module("myApp")
-// myApp.controller("firstController", function($scope) {
-//     alert("Hello from First Controller;")
-// });
+myApp.controller("firstController", function($scope) {
+    $scope.name = "Yogesh";
+    $scope.changeName = function() {
+        $scope.name = "Yogesh Salvi";
+    }
+});
