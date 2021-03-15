@@ -17,7 +17,7 @@
     <h3>What is Angular?</h3>
     <div ng-app="myApp" ng-init="Quantity=2; price= 10;person=['Yogesh','Rakesh',' Mahesh','Jayesh','Suresh']; persons={firstname: 'Yogesh', lastname: 'Salvi'}">
         <p>{{Quantity * price}}</p>
-        <p>{{person[0]}}</p>
+        <p>{{person[0] + " " + persons.lastname }}</p>
         <p>{{persons.lastname}}</p>
         <li ng-repeat="x in color">{{x}}</li>
         <p>Name : <input type="text" ng-model="name"></p>
