@@ -16,11 +16,11 @@
     <p>Welcome to Angular Tutorial</p>
     <h3>What is Angular?</h3>
     <div ng-app="myApp" ng-controller="firstController" ng-init="Quantity=2; price= 10;person=['Yogesh','Rakesh',' Mahesh','Jayesh','Suresh']; persons={firstname: 'Yogesh', lastname: 'Salvi'}">
-        <p>{{Quantity * price}}</p>
-        <p>{{person[0] + " " + persons.lastname }}</p>
-        <p>{{persons.lastname | uppercase}}</p>
-        <p>{{person | filter: 'y'}}</p>
-        <p>{{price | currency }}</p>
+        <p>Total price is : {{Quantity * price}}</p>
+        <p>Items in Array are : {{person[0] + " " + persons.lastname }}</p>
+        <p>Uppercase filter : {{persons.lastname | uppercase}}</p>
+        <p>Filter containing letter y is : {{person | filter: 'y'}}</p>
+        <p>Currency filter : {{price | currency }}</p>
         <li ng-repeat="x in color">{{x}}</li>
         <p>Name : <input type="text" ng-model="name"></p>
         <h1 ng-click="changeName()">{{name}}</h1>
